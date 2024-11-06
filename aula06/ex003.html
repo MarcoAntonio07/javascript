@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        h1{
+            color: blue;
+            text-align: center;
+        }
+
+        p{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quis error voluptates! Tenetur autem expedita officia facere deleniti quibusdam repellendus quaerat ut pariatur quos. Aspernatur nesciunt blanditiis iusto nam ab?</p>
+
+                        <!-- JavaScript -->
+11
+    <script>
+        var n1 = Number(window.prompt("Digite um número:")) //antes o resultado vinha como uma string
+        var n2 = Number(window.prompt("Digite outro número:")) // agora o resultado está vindo como um numero inteiro
+        var s = n1 + n2
+        window.alert(` A soma entre ${n1} e ${n2} é igual a ${s}`)
+
+        // (number + number) para adição
+        
+        // (string + string) para concatenação Ex: window.alert('A soma dos valores é' + s) Ou ja é possível usar o ${variável} para concatenação
+
+        //Number.parseInt() para converter em um numero inteiro
+        //Number.parseFloat() para converter em um numero real
+        //Number() o próprio JavaScript converterá para numero inteiro ou real segundo os dados recebidos
+
+        // String() para converter um dado para String Ex: window.alert('A soma dos valores é ' + String(s))
+    </script>
+    
+</body>
+</html>
