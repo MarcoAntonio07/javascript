@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(66, 65, 65);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>Dom</strong> em JavaScript</p>
+    <div id="caixa">Clique em mim</div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, provident. Quod minima quis aliquam ipsa id a obcaecati iure, recusandae et, optio impedit dicta sapiente atque corrupti mollitia vel incidunt.</p>
+    <h2>Teste Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, magni consequuntur alias minima eligendi ut itaque blanditiis perferendis maxime nam impedit possimus voluptates quo voluptatum optio, autem nisi natus tempora!</h2>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        p1.style.color = 'blue' //Selecionando por tagname//
+
+        var titulo = window.document.getElementById('titulo')
+        titulo.style.color = 'green' //Selecionando por ID//
+
+        var subtitulo = window.document.querySelector('h2')
+        subtitulo.style.background = 'red' //Selecionando por por Seletor//
+        
+    </script>
+</body>
+</html>
