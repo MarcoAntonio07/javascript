@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 2</title>
+</head>
+<body>
+
+    <h1>Minha Calculadora</h1>
+
+    <h2 style="font-family: 'Courier New', Courier, monospace;">Escolha dois números e veja a soma acontecer:</h2>
+    <input type="number" name="numero1" id="inumero1"> + 
+    <input type="number" name="numero2" id="inumero2">
+    <input style="background-color: black; color: white;" type="button" value="somar" name="botao" id="ibotao" onclick="somar()">
+
+    <p id="resposta"></p>
+
+
+    <script>
+
+        function somar() {
+
+            var a = document.getElementById('inumero1');
+            var b = document.getElementById('inumero2');
+            var na = Number(a.value);
+            var nb = Number(b.value);
+            var resultado = na + nb;
+            var fixa = 21;
+
+            if(resultado == fixa) {
+                alert(`Você chegou a ${resultado}`);
+            }else{
+                alert(`Você esta em ${resultado}`);
+            }
+        }
+
+
+    </script>
+</body>
+</html>
