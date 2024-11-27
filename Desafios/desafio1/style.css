@@ -1,0 +1,120 @@
+/*Fonts Inmportadas*/
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bungee+Spice&display=swap');
+
+/*Variaveis*/
+:root{  
+    --font1: normal 20px Abel, sans-serif;
+    --cor1: #260D12;
+    --cor2: #8C7870;
+    --cor3: #402A25;
+    --cor4: #A6938F;
+    --cor5: #F2F2F2;
+}
+
+/*Declarações Globais*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font: var(--font1);
+    background-image: url(imagens/pexels-stephen-leonardi-587681991-18353896.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho{
+    width: 700px;
+    background-color: var(--cor5);
+    border-radius: 20px 0px 0px 0px;
+
+    h1{
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        text-shadow: 1px 1px 3px rgba(50, 49, 49, 0.425);
+    }
+}
+
+.conteudo-principal{
+    width: 700px;
+    height: 300px;
+    background-color: var(--cor5);
+    border-radius: 0px 0px 20px 0px;
+    
+
+    .container{
+        background-color: var(--cor1);
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 0px 0px 10px 10px;
+
+        .box{
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+        }
+
+        label{
+            color: var(--cor5);
+            margin: 10px;
+            padding: 0px 10px;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        input{
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            display: inline-block;
+        }
+        
+    }
+
+    .btn-box{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        margin: 10px;
+
+        input{
+            padding: 5px 10px;
+            border-radius: 10px;
+            border: 1px solid black;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.652);
+        }
+        p{
+            font-weight: 900;
+            color: var(--cor1);
+        }
+
+        input:hover{
+            background-color: black; 
+            border: 1px solid black;
+            color: white;    
+        
+        }
+        
+    }
+}
+
+
+
+.rodape{
+    padding: 10px;
+    text-align: center;
+    color: #F2F2F2;
+}
+
