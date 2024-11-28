@@ -14,7 +14,7 @@
         <section class="container">
             <div class="box">
                 <label for="primeiro-input">Início:</label>
-                <input type="number" name="inicio" id="primeiro-input" placeholder="Digite">
+                <input type="number" name="inicio" id="primeiro-input"placeholder="Digite">
             </div>
             <div class="box">
                 <label for="segundo-input">Fim:</label>
@@ -24,19 +24,18 @@
                 <label for="terceiro-input">Passo:</label>
                 <input type="number" name="passo" id="terceiro-input" placeholder="Digite">
             </div>
-            
-            
         </section>
         <div class="btn-box">
-            <input type="button" value="Iniciar" name="btn" id="button">
-        
+            <input type="button" value="Iniciar" name="btn" id="button" onclick="enviar()">
         <div id="resposta">
-            <p>Contando:</p>   
+            <p id="texto">Contando:</p>   
         </div>
         </div>
     </main>
     <footer class="rodape">
         <p>&copy; CursoemVídeo</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
