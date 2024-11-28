@@ -1,18 +1,23 @@
-
-
 function enviar() {
-    var n1 = document.getElementById('primeiro-input');
-    var n2 = document.getElementById('segundo-input');
-    var n3 = document.getElementById('terceiro-input');
-    var inicial = Number(n1.value);
-    var final = Number(n2.value);
-    var passando = Number(n3.value);
+    // Obtém os elementos de entrada do formulário
+    var n1 = document.getElementById('primeiro-input'); // Obtém o primeiro input
+    var n2 = document.getElementById('segundo-input'); // Obtém o segundo input
+    var n3 = document.getElementById('terceiro-input'); // Obtém o terceiro input
+  
+    // Converte os valores dos inputs para números
+    var inicial = Number(n1.value); // Valor inicial da sequência
+    var final = Number(n2.value); // Valor final da sequência
+    var passando = Number(n3.value); // Incremento a cada passo
+  
+    // Obtém o elemento onde o resultado será exibido
     var res = document.getElementById('resposta');
-    alert(`${inicial} e ${final} e ${passando}`);
-    res.innerHTML = `👉🏻 ${inicial}`;
-    while (inicial < final ) {
-        inicial = inicial + passando
-        res.innerHTML = `👉🏻 ${inicial}`;
+  
+    // Loop que gera a sequência de números
+    while (inicial <= final) {
+      // Adiciona o número atual à string de resultado
+      res.innerHTML += ` ${inicial} `; // Concatena o número atual ao conteúdo existente
+  
+      // Incrementa o valor inicial
+      inicial += passando;
     }
-    
-}
+  }
